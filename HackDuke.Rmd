@@ -49,11 +49,48 @@ b3 <- raster('C:/Users/jbakit/Downloads/LC08_L1TP_042036_20130520_20170310_01_T1
 ```
 
 ```{r}
-compareRaster(b2, b3)
 
 plot(b1)
 
 image(b1)
 ```
+
+```{r}
+
+plot(b2)
+
+image(b2)
+```
+
+```{r}
+
+plot(b3)
+
+image(b3)
+```
+
+
+```{r}
+e <- extent(2000, 2400, 1600, 1800)
+cropped_tay = crop(tay, e)
+plot(cropped_tay)
+```
+
+```{r}
+tayrgb <- stack(list(b1,b2,b3))
+e <- extent(2000, 2400, 1600, 1800)
+cropped_tayrgb = crop(tayrgb, e)
+plot(cropped_tayrgb)
+plotRGB(cropped_tayrgb, axes = TRUE, stretch = "lin")
+
+```
+
+
+
+
+
+
+
+
 
 

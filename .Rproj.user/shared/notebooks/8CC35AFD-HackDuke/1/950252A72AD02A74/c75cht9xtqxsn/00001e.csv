@@ -1,3 +1,0 @@
-"0","e <- extent(2000, 2400, 1600, 1800)"
-"0","cropped_tay = crop(tay, e)"
-"0","plot(cropped_tay)"
