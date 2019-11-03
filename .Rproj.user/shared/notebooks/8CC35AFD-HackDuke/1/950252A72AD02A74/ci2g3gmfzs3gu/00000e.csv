@@ -1,0 +1,4 @@
+"0","tayrgb <- stack(list(b1,b2,b3))"
+"0","e <- extent(2000, 2400, 1600, 1800)"
+"0","cropped_tayrgb = crop(tayrgb, e)"
+"0","plot(cropped_tayrgb)"
